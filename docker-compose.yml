@@ -16,7 +16,7 @@ services:
   app:
     depends_on:
       - mysqldb
-    build: ./spring-boot-notes
+    build: ./spring-boot-notes_1
     restart: on-failure
     env_file: ./.env
     ports:
@@ -37,7 +37,7 @@ services:
   react:
     depends_on:
       - app
-    build: ./react_notes
+    build: ./react_notes_1
     restart: on-failure
     env_file: ./.env
     ports:
